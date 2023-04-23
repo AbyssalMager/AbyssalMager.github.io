@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Fancify Shamcify</title>
-		<script> src = "fancifymytext.js" </script>
+		<script src="fancifymytext.js"> </script>
 		
 	</head>
 
@@ -12,10 +12,11 @@
 			<textarea id = "inputText" name = "inputText" rows = "4" cols = "30"></textarea>
 		</fieldset>
 		<fieldset id = "Fancify">
-			<button type = "button">Bigger!</button>
-			<input type = "radio" id = "fancy" name = "text_change" value = "FancyShmancy">
+			<button type = "button" onclick = "textBigger()">Bigger!</button>
+			<button type = "button" onClick = "moo()">Moo</button>
+			<input type = "radio" id = "fancy" name = "text_change" value = "FancyShmancy" onchange = "boldText()">
 			<label for = "fancy">FancyShmancy</label>
-			<input type = "radio" id = "boring" name = "text_change" value = "BoringBetty">
+			<input type = "radio" id = "boring" name = "text_change" value = "BoringBetty" onchange = "revertText()">
 			<label for = "boring">BoringBetty</label>
 		</fieldset>
 
