@@ -1,1 +1,1 @@
-sdf
+alert("Hello, world!");
